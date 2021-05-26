@@ -1,0 +1,176 @@
+/* web page has applied pink image */
+
+html {
+    height: 100%;
+    background-image: linear-gradient(#ff6161, #ff768c);
+    /* image is not repeated */
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    /* text color is black */
+    color: #0f222d;
+    /* size is auto*/
+    background-size: auto;
+}
+
+
+/* which displays the word count in new web page */
+
+p {
+    /* background color of word counting is light blue */
+    background-color: #6ed7df;
+    /* bg color is mixture of diff colors */
+    background-image: linear-gradient(55deg, #9e96e4 0%, #67db80 52%, #b3d86d 90%);
+    /* border has solid style */
+    border-style: solid;
+    border-width: 5px;
+    /* border color is dark blue */
+    border-color: rgb(56, 35, 114);
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 20px;
+    /* padding used for space between the words */
+    padding: 15px 15px 15px 15px;
+}
+
+
+/* to-do-list will appear in center */
+
+.main {
+    /* has width of 400px */
+    width: 400px;
+    display: flex;
+    /* its in center */
+    justify-content: center;
+    /* The flexible items are displayed vertically, as a column */
+    flex-direction: column;
+    /* You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins: */
+    margin: auto;
+}
+
+
+/* text is in center */
+
+h1 {
+    text-align: center;
+    /* text has white color */
+    color: #fff;
+}
+
+
+/* form is in white color */
+
+form {
+    background-color: #fff;
+    /* padding creates space between elements  */
+    padding: 15px;
+}
+
+
+/* used to write the text */
+
+input[type="text"] {
+    width: 310px;
+    height: 30px;
+    /* no outline style given */
+    outline: 0;
+    /* no border style */
+    border: none;
+    /* em is used for a distance equal to the text size. */
+    font-size: 1.5em;
+    background: #fff;
+    /* color given to text */
+    color: #2f4f4f;
+}
+
+
+/* used for submit button */
+
+button {
+    font-size: 1.5em;
+    color: #53BDFF;
+    /* bg color given as  white */
+    background-color: #fff;
+    outline: 0;
+    /* no border style */
+    border: none;
+    width: 50px;
+}
+
+
+/* to-do-list board given as bg color white */
+
+.tasksBoard {
+    background-color: #fff;
+    /* margin is 20px top */
+    margin-top: 20px;
+    /* padding for space */
+    padding-top: 10px;
+    /* padding given to botton n right */
+    padding-bottom: 10px;
+    padding-right: 40px;
+    display: none;
+}
+
+
+/* no style given to unordered list */
+
+ul {
+    list-style: none;
+}
+
+li {
+    /* bottom line given solid style which is in blue */
+    border-bottom: 1px solid #53BDFF;
+    padding-bottom: 15px;
+    /* space given between text */
+    padding-top: 15px;
+    font-size: 1.3em;
+    /* text color given */
+    color: #2f4f4f;
+}
+
+a {
+    float: right;
+    text-align: right;
+    color: #ff6161;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+/* delete button */
+
+.delete {
+    /* background color applied light pink color */
+    background-color: #ff6161;
+    padding: 0px 3px 0px 3px;
+    /* text given as white color */
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* media used for responsive design */
+
+@media (max-width: 500px) {
+    .main {
+        margin: auto;
+        width: 100%;
+    }
+    input[type="text"] {
+        width: 80%;
+    }
+    button {
+        width: 10%;
+    }
+}
+
+
+/* used for when we enter any text bg color appears as blue */
+
+.but {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aquamarine;
+    color: black;
+}
